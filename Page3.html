@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Page</title>
+
+  <style>
+    /* === STYLE GLOBAL === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    line-height: 1.6;
+}
+
+/* === EN-TÊTE === */
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #87898d, #427a856c);
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+       }
+.entete h2 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.entete h2 span a {
+    color: #ffe600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.entete h2 span a:hover {
+    text-decoration: underline;
+}
+
+.entete img {
+    border-radius: 8px;
+}
+
+/* === SECTION === */
+.group {
+    background-color: #e3faff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* === TITRES === */
+h1 {
+    color: #004aad;
+    text-align: center;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 8px;
+}
+
+/* === INFOS === */
+.info {
+    color: #0077b6;
+    text-decoration: underline;
+}
+
+/* === IMAGE === */
+.img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+/* === LISTES === */
+ol, ul {
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+  </style>
+</head>
+        
+<body> 
+
+    <!-- En-tête -->
+    <div class="entete">
+        <a href="https://enseignementsuperieur.gouv.bj/" target="_blank">
+            <img src="logo_ministère.jpg" 
+                 alt="Logo du Ministère du Bénin"
+                 title="Aller sur la page du Ministère du Bénin"
+                 width="80">
+        </a>
+
+        <h2>
+            BIENVENUE DANS MON SITE WEB<br>
+            <span><a href="#Profession">DJIMA Naim-Deen</a></span>
+        </h2>
+
+        <a href="https://pigier-benin.com/" target="_blank">
+            <img src="logo_Pigier.png" 
+                 alt="Logo de Pigier"
+                 title="Aller sur la page de Pigier"
+                 width="80">
+        </a>
+    </div>
+
+    <!-- Informations personnelles -->
+    <section class="group">
+        <h1>I - Informations Personnelles</h1>
+
+        <p><strong class="info">Nom :</strong> DJIMA</p>
+        <p><strong class="info">Prénom :</strong> Naim-Deen</p>
+        <p><strong class="info">Sexe :</strong> Masculin</p>
+        <p><strong class="info">Contact :</strong> 0198701726</p>
+        <p><strong class="info">Mail :</strong> naimdeen62@gmail.com</p>
+
+        <a href="page2.html" target="_blank">
+            <img class="img" src="Deen.jpg" alt="Page 2"
+                 title="Aller sur la page 2" width="150">
+        </a>
+    </section>
+
+    <!-- Formations -->
+    <section class="group">
+        <h1>II - Mes Formations</h1>
+        <ol>
+            <li>CEP</li>
+            <li>BEPC</li>
+            <li>BAC</li>
+        </ol>
+    </section>
+
+    <!-- Loisirs -->
+    <section class="group">
+        <h1>III - Mes Loisirs</h1>
+        <ul>
+            <li>Dormir</li>
+            <li>Manger</li>
+            <li>Musique</li>
+            <li>Sport</li>
+            <li>Voyage</li>
+            <li>Programmation</li>
+            <li>Regarder des films, séries, mangas</li>
+        </ul>
+    </section>
+
+    <!-- Profession -->
+    <section class="group" id="Profession">
+        <h1>IV - Situation Professionnelle</h1>
+        <p>
+            L’étudiant en RGL2 mène une vie simple et équilibrée.
+            J'apprends à configurer des réseaux, dépanner du matériel et maîtriser les systèmes d’exploitation.
+            Je consacre mes journées aux cours, au codage et à la pratique sur Packet Tracer, puis aux révisions en soirée. 
+            Malgré des moyens limités, je reste organisé, responsable et motivé.
+            Mon temps libre est dédié au sport, à regarder des séries, des mangas et à écouter de la musique.
+            Mon objectif principal est de réussir ma formation, obtenir une certification reconnue et intégrer une entreprise dans le domaine des réseaux informatiques.
+        </p>
+    </section>
+
+</body>
+</html>

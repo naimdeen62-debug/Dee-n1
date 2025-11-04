@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon formulaire</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 20px;
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, white, black);
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.entete h2 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #aaa;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+.boutons {
+  text-align: center;
+}
+
+input[type="submit"], input[type="reset"] {
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, black, grey);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background: linear-gradient(90deg, grey, black);
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="entete">
+    <a href="https://enseignementsuperieur.gouv.bj/" target="_blank">
+      <img src="logo_ministère.jpg" alt="Logo du Ministère du Bénin"
+      title="Aller sur la page du Ministère du Bénin" width="80">
+    </a>
+
+    <h2>BIENVENUE DANS MON SITEWEB</h2>
+
+    <a href="https://pigier-benin.com/" target="_blank">
+      <img src="logo_Pigier.png" alt="Logo de Pigier"
+      title="Aller sur la page de Pigier" width="80">
+    </a>
+  </div>
+
+  <form method="post" action="traitement.php">
+    <p>
+      <label for="nom">Votre nom :</label>
+      <input type="text" name="nom" id="nom" size="30" maxlength="10">
+    </p>
+
+    <p>
+      <label for="prenom">Votre prénom :</label>
+      <input type="text" name="prenom" id="prenom" size="30" maxlength="10">
+    </p>
+
+    <p>
+      <label for="pseudo">Votre pseudo :</label>
+      <input type="text" name="pseudo" id="pseudo" size="30" maxlength="10">
+    </p>
+
+    <p>
+      <label for="mail">Votre mail :</label>
+      <input type="text" name="mail" id="mail" size="50" maxlength="50">
+    </p>
+
+    <p>
+      <label for="pass">Votre mot de passe :</label>
+      <input type="password" name="pass" id="pass">
+    </p>
+
+    <fieldset>
+      <legend>Choix de nourriture</legend>
+      <label><input type="checkbox" name="frites" id="frites"> Frites</label><br>
+      <label><input type="checkbox" name="steak" id="steak"> Steak haché</label><br>
+      <label><input type="checkbox" name="epinards" id="epinards"> Épinards</label><br>
+      <label><input type="checkbox" name="huitres" id="huitres"> Huîtres</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tranche d'âge</legend>
+      <label><input type="radio" name="age" value="moins15"> Moins de 15 ans</label><br>
+      <label><input type="radio" name="age" value="medium15-25"> 15-25 ans</label><br>
+      <label><input type="radio" name="age" value="medium25-40"> 25-40 ans</label><br>
+      <label><input type="radio" name="age" value="plus40"> Plus de 40 ans</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pays de résidence</legend>
+      <label for="pays">Choisissez votre pays :</label><br>
+      <select name="pays" id="pays">
+        <optgroup label="Europe">
+          <option value="france">France</option>
+          <option value="espagne">Espagne</option>
+          <option value="italie">Italie</option>
+          <option value="royaume-uni">Royaume-Uni</option>
+        </optgroup>
+        <optgroup label="Amérique">
+          <option value="canada">Canada</option>
+          <option value="etats-unis">États-Unis</option>
+        </optgroup>
+        <optgroup label="Asie">
+          <option value="chine">Chine</option>
+          <option value="japon">Japon</option>
+        </optgroup>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Vos coordonnées</legend>
+      <label for="nom2">Nom :</label><br>
+      <input type="text" name="nom2" id="nom2"><br>
+      <label for="prenom2">Prénom :</label><br>
+      <input type="text" name="prenom2" id="prenom2"><br>
+      <label for="email">Email :</label><br>
+      <input type="text" name="email" id="email"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Votre souhait</legend>
+      <label><input type="radio" name="souhait" value="riche"> Être riche</label><br>
+      <label><input type="radio" name="souhait" value="celebre"> Être célèbre</label><br>
+      <label><input type="radio" name="souhait" value="intelligent"> Être encore plus intelligent</label><br>
+      <label><input type="radio" name="souhait" value="autre"> Autre...</label><br>
+      <textarea name="precisions" id="precisions" cols="40" rows="4" placeholder="Détaillez ici..."></textarea>
+    </fieldset>
+
+    <p class="boutons">
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Effacer">
+    </p>
+  </form>
+
+</body>
+</html>

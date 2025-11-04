@@ -1,0 +1,135 @@
+body {
+td /* Toutes les cellules des tableaux... */ 
+{ 
+border: 2px solid black; /* ... auront une bordure de 1px */
+}
+table 
+{ 
+border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */ 
+} 
+td 
+{ 
+border: 2px solid black;
+}/* Style de base pour la page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fa;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style du titre du tableau */
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #004d99;
+}
+
+/* Style général des tableaux */
+table {
+    border-collapse: collapse; /* Fusionne les bordures */
+    width: 70%;
+    margin: 20px auto; /* Centre le tableau */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Bordures et espacements */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* En-têtes de colonnes */
+th {
+    background-color: #004d99;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Lignes alternées pour le corps du tableau */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Pied de tableau */
+tfoot th {
+    background-color: #004d99;
+    color: white;
+}
+
+/* Effet au survol */
+tr:hover {
+    background-color: #d6e4ff;
+    transition: 0.3s;
+}
+
+table 
+{ 
+border-collapse: collapse; 
+} 
+td, th /* Mettre une bordure sur les td ET les th */ 
+{ 
+border: 2px solid black;
+}
+/* Sépare le premier tableau du second */
+#tableau-passagers {
+    margin-bottom: 30px; /* Ajoute 30 pixels d'espace en dessous */
+    border-collapse: collapse; /* Bonne pratique pour les tableaux */
+}
+#tableau-passagers {
+    /* ... la margin-bottom de l'étape 2 ... */
+    
+    font-family: Arial, sans-serif; /* Police claire */
+}
+
+/* Style des en-têtes (Nom, Âge, Pays) */
+#tableau-passagers th {
+    background-color: #000000; /* Un bleu foncé */
+    color: white; /* Texte blanc */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style des lignes de données */
+#tableau-passagers td {
+    border: 1px solid #ddd; /* Bordure fine et grise */
+    padding: 8px;
+}
+
+/* Alterner la couleur des lignes pour une meilleure lisibilité (strié) */
+#tableau-passagers tr:nth-child(even) {
+    background-color: #f6f8f8; /* Un gris très clair pour les lignes paires */
+}
+#tableau-films {
+    font-family: 'Georgia', serif; /* Police plus élégante */
+    border: 2px solid #a83232; /* Bordure rouge pour le thème film */
+    border-collapse: collapse;
+}
+
+/* Style du Titre du film */
+#tableau-films th {
+    background-color: #a83232; /* Rouge */
+    color: #ffd700; /* Or (comme les récompenses) */
+    padding: 12px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Style de la première colonne (Pour enfants ?, Pour adolescents ?) */
+#tableau-films td:first-child {
+    font-weight: bold;
+    background-color: #f7e6e6;
+}
+
+/* Texte général */
+#tableau-films td {
+    padding: 10px;
+    color: #333;
+}
+}

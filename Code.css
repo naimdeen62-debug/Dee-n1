@@ -1,0 +1,206 @@
+body {
+  .pas_de_retrait 
+{ 
+list-style-position: inside; 
+} 
+.retrait 
+{ 
+list-style-position: 
+outside;
+}
+.puce1
+{
+  list-style-type: circle ;
+}
+.puce2
+{
+  list-style-type:square;
+}
+.puce3
+{
+  list-style-type: none;
+}
+.commence_a_zero 
+{ 
+list-style-type: decimal-leading-zero; 
+} 
+.lettres_minuscules 
+{ 
+list-style-type: lower-alpha; 
+} 
+.chiffres_romains 
+{ 
+list-style-type: upper-roman; 
+} 
+.lettres_grecques 
+{ 
+list-style-type: lower-greek;
+}
+h2 
+{ 
+text-indent: 20px; 
+font-family: Arial, Verdana, "Times New Roman", serif; 
+} 
+em 
+{ 
+background-color: yellow; 
+} 
+strong 
+{ 
+color: red;
+}
+{ 
+list-style-image: url("C:\Users\PC\OneDrive\Images\moi.jpg "); 
+} 
+ 
+/* Juste pour améliorer la présentation : */ 
+a 
+{ 
+color: blue; 
+text-decoration: none; 
+}
+
+a:hover 
+{ 
+text-decoration: underline; 
+} 
+p{ 
+width: 50%; 
+text-align: justify; 
+}
+p{ 
+width: 250px; 
+height: 100px; 
+text-align: justify;
+}
+p /* Tous les paragraphes auront ces propriétés CSS */{ 
+width: 250px; 
+height: 100px; 
+text-align: justify; 
+}/* Et chacun des paragraphes aura en plus une valeur d'overflow différente */ 
+.coupe{ 
+overflow: hidden; 
+} 
+.barres_defilement{ 
+overflow: scroll; 
+} 
+.auto{ 
+overflow: auto; 
+}
+p
+{ 
+width: 350px; 
+border: 1px solid black; 
+text-align: justify; 
+} 
+p 
+{ 
+width: 350px; 
+border: 1px solid black; 
+text-align: justify; 
+padding: 12px; 
+margin-bottom: 50px; 
+} 
+h1 
+{ 
+margin-left: 30px; 
+}
+
+p 
+{ 
+
+width: 350px; /* On a indiqué une largeur (obligatoire) */ 
+border: 1px solid black; 
+text-align: justify; 
+padding: 12px; 
+margin: auto; /* On peut donc demander à ce que le block soit centré avec "auto" */ 
+margin-bottom: 20px;
+}
+div { 
+width: 150px; 
+} 
+div p { 
+margin-right: 20px; 
+}
+p#premier { 
+margin-bottom: 0; 
+margin-top: 0px; 
+margin-left: 3em; 
+width: 100px; 
+background: orange; 
+} 
+ 
+p#second { 
+position: relative; 
+left: 20px; 
+bottom: 15px; 
+margin-top: 0; 
+margin-left: 3em; 
+width: 150px; 
+height: 50px; 
+background: green;
+}
+div { 
+width: 300px; 
+height: 200px; 
+background: yellow; 
+} 
+p { 
+margin: 0; 
+} 
+p#premier { width: 
+100px; background: 
+orange; 
+} 
+p#second { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 150px; 
+height: 50px; 
+background: green; 
+}
+
+div { 
+position: relative; 
+width: 300px; 
+height: 200px; 
+background: yellow; 
+} 
+div { 
+position: relative; 
+width: 300px; 
+height: 200px; 
+background: yellow; 
+} 
+
+p#premier { 
+position: absolute; 
+top: 0; 
+left: 0; 
+z-index: 10; 
+width: 100px; 
+background: #ccc;
+}
+div { 
+width: 300px; 
+height: 200px; 
+background: yellow; 
+} 
+p#premier { width: 
+100px; background: 
+orange; float: right ; 
+} 
+p#second { 
+background: green; 
+}
+p#second { 
+float: left; 
+width: 150px; 
+background: green; 
+} 
+.separation { 
+clear: both;
+}
+
+}

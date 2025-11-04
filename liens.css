@@ -1,0 +1,44 @@
+/* === Style général === */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #004aad, #00b4d8);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Liste des liens === */
+ol {
+  list-style-type: decimal;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 250px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* === Liens === */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 8px 0;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: #ffe600;
+  transform: translateX(5px);
+}
+
+/* === Lien RETOUR === */
+.retour {
+  color: #381715;
+  font-style: italic;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 10px;
+  display: block;
+  padding-top: 10px;
+}
