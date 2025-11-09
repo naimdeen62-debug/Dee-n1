@@ -1,17 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="Code.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+
+<style>
+/* === STYLE GLOBAL === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* === EN-TÊTE === */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: slideIn 1.2s ease forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* === CONTENU === */
+section {
+    width: 70%;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeInUp 1.3s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    animation: appearText 2s ease;
+}
+
+@keyframes appearText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* === MISE EN VALEUR === */
+strong {
+    color: #ff0000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+strong:hover {
+    color: #a30000;
+}
+
+/* === STICKER DE FIN === */
+.sticker {
+    font-size: 80px;
+    text-align: center;
+    margin: 50px 0 20px;
+    animation: wave 1.5s infinite ease-in-out;
+    cursor: default;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* === ANIMATION SURVOL SECTION === */
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+</style>
 </head>
+
 <body>
-     <p>Bonjour et  Bienvenue sur mon site!</br> Je me nomme 
-            <strong>DJIMA Naïm-Deen</strong>
-            Je suis né le <strong>le 04/03/2008</strong>et je suis<strong>Etudiant</strong>
-        </p>
-        <p>Ceci est mon premier test et je suis vraiment heureux d'ecrire ma première page web . Je deviendrais certainement un grand webmaster dans quelques temps.</p>
-       
+
+<header>PRÉSENTATION</header>
+
+<section>
+    <p>Bonjour et bienvenue sur mon site ! 😊<br><br>
+        Je m'appelle <strong>DJIMA Naim-Deen</strong>, né le <strong>04 mars 2008</strong>.
+        Actuellement étudiant passionné d’informatique, j’aime apprendre, créer et explorer tout ce que le web peut offrir.
+    </p>
+
+    <p>
+        Ce site représente mon tout premier projet personnel sur le web — une étape importante dans mon parcours pour devenir un <strong>grand webmaster</strong>.
+        J’aime relever de nouveaux défis, apprendre de mes erreurs, et m’améliorer jour après jour.
+    </p>
+
+    <p>
+        J’espère que cette page te plaira et que tu prendras autant de plaisir à la découvrir que moi à la créer 💪.
+    </p>
+</section>
+
+<!-- Sticker de fin qui fait coucou -->
+<div class="sticker">👋</div>
+
 </body>
 </html>
