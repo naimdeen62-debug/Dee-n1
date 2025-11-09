@@ -1,133 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Modernité</title>
-    <link rel="stylesheet" href="Code.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modernité</title>
+
+<style>
+/* === STYLE GLOBAL === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f9fff9, #e9fbe9);
+    color: #222;
+    overflow-x: hidden;
+}
+
+/* === EN-TÊTE === */
+header {
+    background: linear-gradient(90deg, #50678a, #8ac4e9);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* === LISTES === */
+ul, ol, dl {
+    margin: 30px auto;
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+li, dt, dd {
+    font-size: 18px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+li:hover, dt:hover, dd:hover {
+    transform: translateX(10px);
+    color: #00cc66;
+}
+
+/* === PARAGRAPHES ET TEXTES === */
+p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin: 15px auto;
+    width: 75%;
+    text-align: justify;
+}
+
+em {
+    color: #00994d;
+    font-style: italic;
+}
+
+strong {
+    color: #ff3333;
+}
+
+/* === TITRES === */
+h1, h2 {
+    color: #0066cc; /* Bleu pour tous les titres */
+    text-align: center;
+}
+
+/* === SÉPARATION === */
+hr.separation {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #00cc66, transparent);
+    width: 80%;
+    margin: 40px auto;
+}
+</style>
 </head>
+
 <body>
-<ul> 
-<li>Fraises</li> 
-<li>Framboises</li> 
-<li>Cerises</li> 
-</ul> 
-<ol> 
-<li>Je me lève</li> 
-<li>Je mange et je bois</li> 
-<li>Je retourne me coucher</li>
-<dl> 
-<dt>Chat</dt> 
-<dd>Animal à 4 pattes qui fait "Miaou !"</dd> 
-<dt>Chien</dt> 
-<dd>Animal à 4 pattes qui fait "Ouaf Ouaf !"</dd> 
-<dt>Prof de maths</dt> 
-<dd>Personne qui enseigne des choses que personne ne comprend</dd>
-</dl>
+<section>
+    <h2>Les Délices Rouges 🍓</h2>
+    <ul> 
+        <li>Fraises</li> 
+        <li>Framboises</li> 
+        <li>Cerises</li> 
+    </ul>
 
-<p>Voici une liste avec retrait (par défaut) :</p> 
-<ul class="retrait"> 
-<li>Liste<br />à puces</li> 
-<li>Ligne 1<br />Ligne 2</li> 
-<li>Vous pouvez voir<br />que le texte est décalé sur la droite</li> 
-</ul> 
-<p>Voici une liste sans retrait :</p> 
-<ul class="pas_de_retrait"> 
-<li>Liste<br />à puces</li> 
-<li>Ligne 1<br />Ligne    2</li> 
-<li>Vous pouvez voir<br />que le texte n'est pas décalé sur la droite</li> 
-</ul> 
+    <h2>Une Journée Bien Remplie 🌞</h2>
+    <ol> 
+        <li>Je me lève</li> 
+        <li>Je mange et je bois</li> 
+        <li>Je retourne me coucher</li>
+    </ol>
 
-<h2>Quelques listes non ordonnées</h2> 
-<p>Voici une liste à puce non ordonnée sans modification (= <em>disc</em>) :</p> 
-<ul> 
-<li>Liste</li> 
-<li>à</li> 
-<li>puces</li> 
-</ul> 
-<p>Avec <em>circle</em> :</p> 
-<ul class="puce1"> 
-<li>Liste</li> 
-<li>à</li> 
-<li>puces</li> 
-</ul> 
-<p>Avec <em>square</em> :</p> 
-<ul class="puce2"> 
-<li>Liste</li> 
-<li>à</li> 
-<li>puces</li> 
-</ul> 
-<p>Avec <em>none</em> (sans puces) :</p> 
-<ul class="puce3"> 
-<li>Liste</li> 
-<li>à</li> 
-<li>puces</li> 
-</ul> 
- 
-<h2>Quelques listes ordonnées</h2>
-<p>Liste à puces ordonnée sans modification (= <em>decimal</em>)</p> 
-<ol> 
-<li>Un</li> 
-<li>Deux</li> 
-<li>Trois</li> 
-<li>Quatre</li> 
-</ol> 
-<p>Avec <em>decimal-leading-zero</em> (<strong>Ne fonctionne pas sous IE)</strong>) :</p> 
-<ol class="commence_a_zero"> 
-<li>Un</li> 
-<li>Deux</li> 
-<li>Trois</li> 
-<li>Quatre</li> 
-</ol> 
-<p>Avec <em>lower-alpha</em> :</p> 
-<ol class="lettres_minuscules"> 
-<li>Un</li> 
-<li>Deux</li> 
-<li>Trois</li> 
-<li>Quatre</li> 
-</ol> 
-<p>Avec <em>upper-roman</em> :</p> 
-<ol class="chiffres_romains"> 
-<li>Un</li> 
-<li>Deux</li> 
-<li>Trois</li> 
-<li>Quatre</li> 
-</ol> 
-<p>Avec <em>lower-greek</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p> 
-<ol class="lettres_grecques"> 
-<li>Un</li> 
-<li>Deux</li> 
-<li>Trois</li> 
-<li>Quatre</li> 
-</ol> 
+    <h2>Quelques Définitions amusantes </h2>
+    <dl> 
+        <dt>Chat</dt> 
+        <dd>Animal à 4 pattes qui fait <em>“Miaou !”</em></dd> 
+        <dt>Chien</dt> 
+        <dd>Animal fidèle à 4 pattes qui fait <em>“Ouaf Ouaf !”</em></dd> 
+        <dt>Prof de maths</dt> 
+        <dd>Personne qui enseigne des choses que peu de gens comprennent… mais qu’on finit toujours par aimer.</dd>
+    </dl>
+</section>
 
- <div> 
-<p>paragraphe de contenu</p> 
-</div>
- <div> 
-<h1>Quel joli titre évocateur</h1> 
-<p>Je me souviens de l'été dernier </p> 
-<h2>Un sous-titre intéressant</h2> 
-<p>je n'ai jamais vu un ciel <em>aussi ombrageux</em>.</p> 
-</div> 
+<div>
+    <h1>Un peu de poésie...</h1>
+    <p>Je me souviens de l’été dernier, des rires et du vent chaud.  
+    Sous ce <em>ciel ombrageux</em>, le temps semblait suspendu.</p>
 
-<div> 
-<p id=“premier”>Je suis assez fier de ma personne</p> 
-<p id=“second”>Il m'a dit que j'étais la plus belle</p>
+    <h2>Une discussion sincère</h2>
+    <p>Il me parla de ses doutes, de ses peurs et de ses rêves,  
+    et moi, j’écoutais, touché par sa <strong>vulnérabilité</strong>.</p>
+
+    <p>Un silence… puis un regard.  
+    C’était comme si le monde s’était arrêté une seconde.</p>
 </div>
 
-<div> 
-<p id="premier">Pour une fois je l'écoute</p> 
-<p id="second">J'apprécie énormement sa compagnie</p> 
-</div> 
-
-<div> 
-<p id="premier">Im me regarda avec des yeux de biche</p> 
-<p id="second">Il me parle de tous ces démons qui sont en lui sans pour autant les justifier </p>
-</div>
-
-<div> 
-<p id="premier">Tout d'un coup un silence</p> 
-<p id="second">On a compris que c'était une question de seconde</p> </p> 
-<hr class="separation" /> 
-</div> 
+<hr class="separation" />
+</body>
+</html>
