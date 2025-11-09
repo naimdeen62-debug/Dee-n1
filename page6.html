@@ -1,100 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tableaux centrés</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    /* Arrière-plan bleu et blanc */
+    body {
+      background: linear-gradient(to bottom right, #ffffff, #87CEFA);
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      color: #333;
+      animation: fadeIn 2s ease-in;
+    }
 
-    <style>
-      body {
-        background: #87CEFA;
-        font-family: Arial, sans-serif;
-        text-align: center;
-      }
+   
 
-      /* Centrer les tableaux */
-      table {
-        border: 2px solid black;
-        border-collapse: collapse;
-        width: 300px;
-        margin: 20px auto;
-      }
+    /* Centrage et style des tableaux */
+    table {
+      border: 2px solid black;
+      border-collapse: collapse;
+      width: 300px;
+      margin: 30px auto;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+      font-weight: bold;
+      animation: appear 1.5s ease-in;
+    }
 
-      td, th {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-        vertical-align: middle;
-      }
+    table:hover {
+      transform: scale(1.05);
+    }
 
-      /* Styles spécifiques */
-      .RG1 {
-        background-color: gray;
-        color: white;
-      }
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-      .RG3 {
-        background: linear-gradient(45deg, blue, white);
-      }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+      transition: background 0.4s, color 0.4s;
+    }
 
-      /* RMS1 avec rotation propre */
-      .RM1 {
-        background: #352020;
-        position: relative;
-      }
+    tr:hover td {
+      background: #f0f8ff;
+      color: #000;
+    }
 
-      .RM1 span {
-        display: inline-block;
-        transform: rotate(-15deg); /* rotation douce */
-        font-style: italic;
-        font-weight: bold;
-      }
+    /* Couleurs spécifiques */
+    .RG1 {
+      background-color: gray;
+      color: white;
+    }
 
-      /* Couleurs pour Tableau 3 */
-      .A { background: lightcoral; }
-      .B { background: lightgreen; }
-      .C { background: lightyellow; }
-      .D { background: lightblue; }
-      .E { background: lightpink; }
-    </style>
-  </head>
+    .RG3 {
+      background: linear-gradient(45deg, blue, white);
+      color: black;
+    }
 
-  <body>
-    <h2>Tableau 1</h2>
-    <table>
-      <thead>
-        <tr><th colspan="2" class="RG1">RGL1</th></tr>
-      </thead>
-      <tr>
-        <td class="RG2">RGL2</td>
-        <td class="RG3">RGL3</td>
-      </tr>
-    </table>
+    .RM1 {
+      background: #352020;
+      color: white;
+    }
 
-    <h2>Tableau 2</h2>
-    <table>
-      <tr>
-        <td class="RM1" rowspan="2"><span>RMS1</span></td>
-        <td class="RM2">RMS2</td>
-      </tr>
-      <tr>
-        <td class="RG2">RGL2</td>
-      </tr>
-    </table>
+    .RM1 span {
+      display: inline-block;
+      transform: rotate(-15deg);
+      font-style: italic;
+      font-weight: bold;
+    }
 
-    <h2>Tableau 3</h2>
-    <table>
-      <thead>
-        <tr><th colspan="3" class="A">A</th></tr>
-      </thead>
-      <tr>
-        <td rowspan="2" class="B">B</td>
-        <td colspan="2" class="C">C</td>
-      </tr>
-      <tr>
-        <td class="D">D</td>
-        <td class="E">E</td>
-      </tr>
-    </table>
-  </body>
+    .A { background: lightcoral; }
+    .B { background: lightgreen; }
+    .C { background: lightyellow; }
+    .D { background: lightblue; }
+    .E { background: lightpink; }
+
+  
+  </style>
+</head>
+<body>
+
+
+  <h2>Tableau 1</h2>
+  <table>
+    <thead>
+      <tr><th colspan="2" class="RG1">RGL1</th></tr>
+    </thead>
+    <tr>
+      <td class="RG2">RGL2</td>
+      <td class="RG3">RGL3</td>
+    </tr>
+  </table>
+
+  <h2>Tableau 2</h2>
+  <table>
+    <tr>
+      <td class="RM1" rowspan="2"><span>RMS1</span></td>
+      <td class="RM2">RMS2</td>
+    </tr>
+    <tr>
+      <td class="RG2">RGL2</td>
+    </tr>
+  </table>
+
+  <h2>Tableau 3</h2>
+  <table>
+    <thead>
+      <tr><th colspan="3" class="A">A</th></tr>
+    </thead>
+    <tr>
+      <td rowspan="2" class="B">B</td>
+      <td colspan="2" class="C">C</td>
+    </tr>
+    <tr>
+      <td class="D">D</td>
+      <td class="E">E</td>
+    </tr>
+  </table>
+
+  
+</body>
 </html>
